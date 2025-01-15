@@ -15,7 +15,7 @@ def index():
             day_of_week = date.strftime("%A")
         except ValueError:
             day_of_week = "Invalid date. Please try again."
-    return render_template("index1.html", day_of_week=day_of_week)
+    return render_template("index.html", day_of_week=day_of_week)
 
 if __name__ == "__main__":
     app.run(debug=True)
